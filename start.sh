@@ -1,4 +1,4 @@
-docker compose up init airflow
+docker compose up init-airflow
 
 sleep 5
 
@@ -11,5 +11,5 @@ cd airbyte
 if [ -f "docker.compose.yaml"]; then
   docker compose up -d
 else
-  ./ run-ab-platform.sh
+  ./run-ab-platform.sh
 fi
