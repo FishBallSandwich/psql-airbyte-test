@@ -69,8 +69,8 @@ t2 = DockerOperator(
     network_mode = "bridge",
     mount_tmp_dir=False,
     mounts = [
-        Mount(source='c:/Users/ngcha/source/repos/elt_project/custom_postgres', target='/usr/app',type='bind'),
-        Mount(source='c:/Users/ngcha/.dbt', target='/root/.dbt', type='bind'),
+        Mount(source='c:/Users/repos/elt_project/custom_postgres', target='/usr/app',type='bind'),
+        Mount(source='c:/Users/.dbt', target='/root/.dbt', type='bind'),
     ],
     dag=dag
 )
